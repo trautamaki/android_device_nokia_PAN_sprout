@@ -126,13 +126,6 @@ service qfp-daemon /system/vendor/bin/qfp-daemon
    user system
    group system drmrpc
 
-# Allow usb charging to be disabled peristently
-on property:persist.usb.chgdisabled=1
-    write /sys/class/power_supply/battery/charging_enabled 0
-
-on property:persist.usb.chgdisabled=0
-    write /sys/class/power_supply/battery/charging_enabled 1
-
 service qrngd /system/bin/qrngd -f
    class main
    user root
