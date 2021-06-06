@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_aura.mk
+    $(LOCAL_DIR)/lineage_panther.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_aura-user \
-    lineage_aura-userdebug \
-    lineage_aura-eng
+    lineage_panther-user \
+    lineage_panther-userdebug \
+    lineage_panther-eng

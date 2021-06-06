@@ -15,7 +15,7 @@
 //
 
 cc_library {
-    name: "bootctrl.sdm845",
+    name: "bootctrl.msm8937",
     defaults: ["bootctrl_hal_defaults"],
-    static_libs: ["libgptutils.aura"],
+    static_libs: ["libgptutils.panther"],
 }

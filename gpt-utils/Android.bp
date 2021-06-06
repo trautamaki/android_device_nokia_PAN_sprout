@@ -16,7 +16,7 @@
 
 
 cc_library {
-    name: "libgptutils.aura",
+    name: "libgptutils.panther",
     vendor: true,
     recovery_available: true,
     shared_libs: [

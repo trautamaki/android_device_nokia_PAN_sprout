@@ -1,4 +1,5 @@
-# Proprietary files - from aura-p-release-3201-user-full.zip, unless pinned
+# Proprietary files - from Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002,
+# unless pinned
 
 # ACDB
 vendor/etc/acdbdata/RC2/Bluetooth_cal.acdb

@@ -1,26 +1,27 @@
-Copyright (C) 2018-2020 The LineageOS Project
+Copyright (C) 2018-2021 The LineageOS Project
 
-Device configuration for Razer Phone 2
+Device configuration for Nokia 4.2
 =========================================
 
-The Razer Phone 2 (codenamed _"aura"_) is a high-end smartphone from Razer.
+The Nokia 4.2 (codenamed _"panther"_) is a low-end smartphone from Nokia.
 
-It was announced and released in October 2018.
+It was released in May 2019.
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-SoC     | Qualcomm SDM845 Snapdragon 845
-CPU     | Octa-core (4x2.8 GHz Kryo 385 Gold & 4x1.8 GHz Kryo 385 Silver)
-GPU     | Adreno 630
-Memory  | 8 GB RAM
-Shipped Android Version | 8.1
-Storage | 64/128 GB
-Battery | Non-removable Li-Po 4000 mAh battery
-Display | 1440 x 2560 pixels, 16:9 ratio, 5.72 inches, IGZO IPS LCD (~513 ppi density)
-Camera  | Dual 12 MP, OIS, 2x optical zoom, dual-LED (dual tone) flash
+SoC     | Qualcomm SDM439
+CPU     | Octa-core (4x1.95 GHz Cortex-A53 & 4x1.45 GHz Cortex A53)
+GPU     | Adreno 505
+Memory  | 2/3 GB RAM
+Shipped Android version | 9.0
+Storage | 16/32 GB
+Battery | Non-removable Li-Po 3000 mAh battery
+Display | 720 x 1520 pixels, 19:9 ratio, 5.71 inches, IGZO IPS LCD (~295 ppi density)
+Main camera | Dual 13 MP, PDAF
+Selfie camera | 8 MP
 
 ## Device picture
 
-![Razer Phone 2](https://press.razer.com/wp-content/uploads/2018/10/0000-1024x575.png "Razer Phone 2")
+![Nokia 4.2](https://images.ctfassets.net/wcfotm6rrl7u/2os9WLAM8yNgtnrSi24zCE/3a6c43e7998ed1c9f5fdf6d735671658/nokia_4_2-DTC-android_10-ok_google.png?w=348&h=720&fm=webp&f=center&fit=fill&q=88 "Nokia 4.2")

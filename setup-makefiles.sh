@@ -8,8 +8,8 @@
 
 set -e
 
-DEVICE=aura
-VENDOR=razer
+DEVICE=panther
+VENDOR=nokia
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

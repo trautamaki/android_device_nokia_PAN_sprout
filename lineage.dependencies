@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_razer_sdm845",
-    "target_path": "kernel/razer/sdm845"
+    "repository": "android_kernel_nokia_sdm439",
+    "target_path": "kernel/nokia/sdm439"
   }
 ]

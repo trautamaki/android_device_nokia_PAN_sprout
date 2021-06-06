@@ -13,9 +13,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!-- Aura specific carrier overlays -->
+<!-- Panther specific carrier overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.carrierconfig.aura"
+    package="com.android.carrierconfig.panther"
     android:versionCode="1"
     android:versionName="1.0">
     <application android:hasCode="false" />
