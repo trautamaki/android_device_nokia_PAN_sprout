@@ -58,6 +58,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CONFIG := lineage_panther_defconfig
   TARGET_KERNEL_SOURCE := kernel/nokia/sdm439
 endif
+TARGET_KERNEL_VERSION := 4.9
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
