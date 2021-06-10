@@ -171,17 +171,26 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.msm.usb.configfs.rc \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
-    init.qcom.power.rc \
-    init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.qti.qseecomd.sh \
     init.recovery.qcom.rc \
-    init.sensor.e2pwrite.sh \
+    init.qcom.sh \
+    init.qcom.factory.rc \
+    init.qcom.usb.rc \
+    init.qcom.sdio.sh \
+    init.qcom.usb.sh \
+    init.qcom.sensors.sh \
+    init.qti.can.sh \
+    init.qti.fm.sh \
+    init.qti.qseecomd.sh \
+    init.stnfc.rc \
     init.target.rc \
     ueventd.qcom.rc
 
