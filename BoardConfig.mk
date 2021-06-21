@@ -15,8 +15,7 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vbmeta \
-    vendor
+    vbmeta
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -74,6 +73,7 @@ endif
 TARGET_KERNEL_VERSION := 4.9
 
 # Platform
+BUILD_WITHOUT_VENDOR := true
 TARGET_BOARD_PLATFORM := msm8937
 
 # ANT+
