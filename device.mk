@@ -196,6 +196,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# Device system-side init
+PRODUCT_PACKAGES += \
+    init.target.rc
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
