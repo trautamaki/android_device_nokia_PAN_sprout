@@ -7,6 +7,10 @@ system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
 -system_ext/lib/libantradio.so
 
+# Bluetooth (aptX)
+lib64/libaptX_encoder.so:system_ext/lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so:system_ext/lib64/libaptXHD_encoder.so
+
 # DPM
 product/bin/dpmd:system_ext/bin/dpmd
 product/etc/dpm/dpm.conf:system_ext/etc/dpm/dpm.conf
