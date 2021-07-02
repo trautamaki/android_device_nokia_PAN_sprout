@@ -1,2 +1,2 @@
 on init
-    mount none /system/lib/modules/wlan.ko /vendor/lib/modules/pronto_wlan.ko bind
+    symlink /product/vendor_overlay/30/lib/modules/wlan.ko /product/vendor_overlay/30/lib/modules/pronto_wlan.ko
