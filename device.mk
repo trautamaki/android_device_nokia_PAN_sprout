@@ -31,8 +31,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # /vendor/default.prop is force-setting ro.adb.secure=1
 # Get rid of that by overriding it in /product on eng builds
