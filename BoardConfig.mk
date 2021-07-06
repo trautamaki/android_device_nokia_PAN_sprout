@@ -54,6 +54,7 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom video=vfb:640x400,bpp=32,memsi
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci earlycon=msm_serial_dm,0x78B0000
 BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -138,7 +139,6 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 # Recovery
-TARGET_RECOVERY_DENSITY := xxhdpi
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 
