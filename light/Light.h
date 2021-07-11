@@ -39,7 +39,8 @@ struct LightBackend {
     LightState state;
     LightStateHandler handler;
 
-    LightBackend(Type type, LightStateHandler handler) : type(type), handler(handler) {
+    LightBackend(Type type, LightStateHandler handler) :
+            type(type), handler(handler) {
         this->state.color = 0xff000000;
     }
 };

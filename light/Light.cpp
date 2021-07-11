@@ -94,36 +94,26 @@ static uint32_t getBrightness(const LightState& state) {
     return (77 * red + 150 * green + 29 * blue) >> 8;
 }
 
-static inline uint32_t scaleBrightness(uint32_t brightness, uint32_t maxBrightness) {
+static inline uint32_t scaleBrightness(
+        uint32_t brightness, uint32_t maxBrightness) {
     return brightness * maxBrightness / 0xFF;
 }
 
-static inline uint32_t getScaledBrightness(const LightState& state, uint32_t maxBrightness) {
+static inline uint32_t getScaledBrightness(
+        const LightState& state, uint32_t maxBrightness) {
     return scaleBrightness(getBrightness(state), maxBrightness);
 }
 
 static void handleBacklight(const LightState& state) {
-    uint32_t brightness = getScaledBrightness(state, getMaxBrightness(LCD_LED MAX_BRIGHTNESS));
+    uint32_t brightness = getScaledBrightness(state,
+            getMaxBrightness(LCD_LED MAX_BRIGHTNESS));
     set(LCD_LED BRIGHTNESS, brightness);
 }
 
 static void handleNotification(const LightState& state) {
-    uint32_t whiteBrightness = getScaledBrightness(state, getMaxBrightness(WHITE_LED MAX_BRIGHTNESS));
-
-    /* Disable blinking */
-    set(WHITE_LED BREATH, 0);
-
-    if (state.flashMode == Flash::TIMED) {
-
-        /* White */
-        set(WHITE_LED DELAY_OFF, state.flashOffMs);
-        set(WHITE_LED DELAY_ON, state.flashOnMs);
-
-        /* Enable blinking */
-        set(WHITE_LED BREATH, 1);
-    } else {
-        set(WHITE_LED BRIGHTNESS, whiteBrightness);
-    }
+    uint32_t whiteBrightness = getScaledBrightness(state,
+            getMaxBrightness(WHITE_LED MAX_BRIGHTNESS));
+    set(WHITE_LED BRIGHTNESS, whiteBrightness);
 }
 
 static inline bool isLit(const LightState& state) {
@@ -166,7 +156,8 @@ Return<Status> Light::setLight(Type type, const LightState& state) {
         return Status::LIGHT_NOT_SUPPORTED;
     }
 
-    /* Light up the type with the highest priority that matches the current handler. */
+    /* Light up the type with the highest priority
+       that matches the current handler. */
     for (LightBackend& backend : backends) {
         if (handler == backend.handler && isLit(backend.state)) {
             handler(backend.state);
