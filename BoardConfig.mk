@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/nokia/panther
+DEVICE_PATH := device/nokia/PAN_sprout
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -166,4 +166,4 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/nokia/panther/BoardConfigVendor.mk
+include vendor/nokia/PAN_sprout/BoardConfigVendor.mk

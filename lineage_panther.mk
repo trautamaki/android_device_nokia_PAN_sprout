@@ -4,14 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/nokia/panther/device.mk)
+$(call inherit-product, device/nokia/PAN_sprout/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_panther
-PRODUCT_DEVICE := panther
+PRODUCT_DEVICE := PAN_sprout
 PRODUCT_BRAND := nokia
 PRODUCT_MODEL := Nokia 4.2
 PRODUCT_MANUFACTURER := HMD Global
