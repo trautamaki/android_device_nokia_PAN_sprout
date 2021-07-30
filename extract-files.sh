@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=panther
+DEVICE=PAN_sprout
 VENDOR=nokia
 
 # Load extract_utils and do some sanity checks
