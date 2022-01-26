@@ -1,4 +1,4 @@
-# Proprietary files - from Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002,
+# Proprietary files - from Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002/00WW_3_240,
 # unless pinned
 
 # ANT+
