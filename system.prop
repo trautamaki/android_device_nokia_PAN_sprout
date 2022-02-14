@@ -5,6 +5,7 @@ ro.kernel.ebpf.supported=true
 persist.bluetooth.a2dp_offload.disabled=true
 persist.vendor.bluetooth.modem_nv_support=true
 ro.bluetooth.a2dp_offload.supported=false
+ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Cabl
 config.svi.path=vendor/data/sviconfig.xml
