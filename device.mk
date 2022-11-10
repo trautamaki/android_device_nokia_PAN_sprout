@@ -69,12 +69,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.1-impl \
     audio.r_submix.default \
     audio.usb.default \
-    libaudioalsa \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
     libtinycompress \
-    libvolumelistener \
     tinymix
 
 PRODUCT_COPY_FILES += \
@@ -107,12 +102,7 @@ PRODUCT_PACKAGES_DEBUG += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
-    android.hardware.camera.provider@2.4-service \
-    Snap
-
-# Device fstab
-PRODUCT_PACKAGES += \
-    fstab.qcom
+    android.hardware.camera.provider@2.4-service
 
 # Device init scripts
 PRODUCT_PACKAGES += \
@@ -127,17 +117,11 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    gralloc.msm8937 \
-    hwcomposer.msm8937 \
-    libdisplayconfig.qti \
     libqdMetaData \
     libtinyxml \
-    memtrack.msm8937 \
-    vendor.display.config@2.0 \
-    vendor.qti.hardware.display.allocator@1.0-service
+    vendor.display.config@2.0
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -175,17 +159,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libc2dcolorconvert \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw
+    libavservices_minijail
 
 # Net
 PRODUCT_PACKAGES += \
@@ -270,10 +244,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb-gadget@1.0-service
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl:64 \
@@ -294,8 +264,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
+    libnl
 
 #PRODUCT_BOOT_JARS += \
 #    WfdCommon
