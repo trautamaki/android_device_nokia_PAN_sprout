@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Bluetooth Audio HAL Audio Policy Configuration file -->
-<module name="bluetooth_qti" halVersion="2.0">
+<module name="bluetooth" halVersion="2.0">
     <mixPorts>
         <!-- A2DP Audio Ports -->
         <mixPort name="a2dp output" role="source"/>
