@@ -57,6 +57,11 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+# Treble - keep above audio
+PRODUCT_USE_VNDK_OVERRIDE := true
+PRODUCT_TARGET_VNDK_VERSION := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 30 29
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
@@ -222,11 +227,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Treble
-PRODUCT_USE_VNDK_OVERRIDE := true
-PRODUCT_TARGET_VNDK_VERSION := 31
-PRODUCT_EXTRA_VNDK_VERSIONS := 30 29
 
 # Trust HAL
 PRODUCT_PACKAGES += \
