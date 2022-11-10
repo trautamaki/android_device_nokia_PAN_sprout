@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_panther.mk
+    $(LOCAL_DIR)/lineage_PAN_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_panther-user \
-    lineage_panther-userdebug \
-    lineage_panther-eng
+    lineage_PAN_sprout-user \
+    lineage_PAN_sprout-userdebug \
+    lineage_PAN_sprout-eng
