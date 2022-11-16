@@ -1,2 +1,5 @@
 on init
     symlink /product/vendor_overlay/30/lib/modules/wlan.ko /product/vendor_overlay/30/lib/modules/pronto_wlan.ko
+
+on post-fs
+    mount none /system/etc/a2dp_audio_policy_configuration.xml /vendor/etc/a2dp_audio_policy_configuration.xml bind
