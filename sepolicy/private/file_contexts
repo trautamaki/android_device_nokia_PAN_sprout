@@ -1,3 +1,6 @@
+# Audio
+/system/etc/a2dp_audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
+
 # Vendor overlay
 /(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?      u:object_r:vendor_configs_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/lib(64)?/hw    u:object_r:vendor_hal_file:s0
