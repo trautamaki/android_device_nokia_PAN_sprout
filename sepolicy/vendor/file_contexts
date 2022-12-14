@@ -1,7 +1,3 @@
-# Block devices
-/dev/block/platform/soc/7824900.sdhci/by-name/vbmeta_[ab]           u:object_r:system_block_device:s0
-/dev/block/platform/soc/7824900.sdhci/by-name/dtbo_[ab]             u:object_r:system_block_device:s0
-
 # HALs
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.aura                            u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.aura                                              u:object_r:hal_light_default_exec:s0
