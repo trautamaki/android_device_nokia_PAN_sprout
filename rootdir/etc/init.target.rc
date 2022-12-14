@@ -126,6 +126,13 @@ service qfp-daemon /system/vendor/bin/qfp-daemon
    user system
    group system drmrpc
 
+# Allow usb charging to be disabled peristently
+on property:persist.usb.chgdisabled=1
+    write /sys/class/power_supply/battery/charging_enabled 0
+
+on property:persist.usb.chgdisabled=0
+    write /sys/class/power_supply/battery/charging_enabled 1
+
 service qrngd /system/bin/qrngd -f
    class main
    user root
@@ -361,4 +368,3 @@ on property:sys.dualcamera.cali=1
 on property:sys.dualcamera.cali=2
     write /sys/bus/platform/devices/1b0c000.qcom,cci:qcom,eeprom@0/calibration_data 2
 #-Bug 505876,cdzk,add,2020/12/25,add for westalgo start
->>>>>>> parent of cbcf585b (panther: build without vendor)
