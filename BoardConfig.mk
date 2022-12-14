@@ -13,7 +13,8 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     system \
-    vbmeta
+    vbmeta \
+    vendor
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -73,7 +74,6 @@ TARGET_KERNEL_SOURCE := kernel/nokia/sdm439
 TARGET_KERNEL_VERSION := 4.9
 
 # Platform
-BUILD_WITHOUT_VENDOR := true
 TARGET_BOARD_PLATFORM := msm8937
 
 # ANT+
@@ -157,6 +157,7 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn

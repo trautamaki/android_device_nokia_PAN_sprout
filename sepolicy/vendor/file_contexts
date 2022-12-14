@@ -1,0 +1,19 @@
+# Block devices
+/dev/block/platform/soc/7824900.sdhci/by-name/vbmeta_[ab]           u:object_r:system_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/dtbo_[ab]             u:object_r:system_block_device:s0
+
+# HALs
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.aura                            u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.light@2\.0-service\.aura                                              u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-qti                                       u:object_r:hal_neuralnetworks_default_exec:s0
+
+# Health
+/sys/devices/platform/soc/89c000.i2c/i2c-5/5-0061/power_supply/wireless(/.*)?                           u:object_r:sysfs_wireless_supply:s0
+
+# RFS
+/data/misc/fih_atl(/.*)?                                                                                u:object_r:data_rfs_shared_hlos_file:s0
+/data/misc/fih_mcfg(/.*)?                                                                               u:object_r:data_rfs_shared_hlos_file:s0
+
+# Services
+/vendor/bin/wireless_init                                                                               u:object_r:wireless_init_exec:s0
+/vendor/bin/init\.sensor\.e2pwrite\.sh                                                                  u:object_r:sensors_e2p_exec:s0
