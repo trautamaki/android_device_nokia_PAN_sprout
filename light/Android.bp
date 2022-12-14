@@ -19,7 +19,6 @@ cc_binary {
     init_rc: ["android.hardware.light@2.0-service.panther.rc"],
     vintf_fragments: ["android.hardware.light@2.0-service.panther.xml"],
     srcs: ["service.cpp", "Light.cpp"],
-    vendor: true,
     shared_libs: [
         "android.hardware.light@2.0",
         "libbase",

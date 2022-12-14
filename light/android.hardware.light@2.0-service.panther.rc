@@ -9,7 +9,7 @@ on boot
     chmod 660 /sys/class/leds/red/delay_on
     chmod 660 /sys/class/leds/red/delay_off
 
-service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.aura
+service vendor.light-hal-2-0 /system/bin/hw/android.hardware.light@2.0-service.panther
     interface android.hardware.light@2.0::ILight default
     class hal
     user system
